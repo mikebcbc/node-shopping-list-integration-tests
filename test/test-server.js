@@ -38,7 +38,7 @@ describe('Shopping List', function() {
   //   1. make request to `/shopping-list`
   //   2. inspect response object and prove has right code and have
   //   right keys in response object.
-  it('should list items on GET', function() {
+  it('SHOPPING: should list items on GET', function() {
     // for Mocha tests, when we're dealing with asynchronous operations,
     // we must either return a Promise object or else call a `done` callback
     // at the end of the test. The `chai.request(server).get...` call is asynchronous
@@ -66,7 +66,7 @@ describe('Shopping List', function() {
   //  1. make a POST request with data for a new item
   //  2. inspect response object and prove it has right
   //  status code and that the returned object has an `id`
-  it('should add an item on POST', function() {
+  it('SHOPPING: should add an item on POST', function() {
     const newItem = {name: 'coffee', checked: false};
     return chai.request(app)
       .post('/shopping-list')
@@ -91,7 +91,7 @@ describe('Shopping List', function() {
   //  5. Inspect the response object to ensure it
   //  has right status code and that we get back an updated
   //  item with the right data in it.
-  it('should update items on PUT', function() {
+  it('SHOPPING: should update items on PUT', function() {
     // we initialize our updateData here and then after the initial
     // request to the app, we update it with an `id` property so
     // we can make a second, PUT call to the app.
@@ -128,7 +128,7 @@ describe('Shopping List', function() {
   //  1. GET a shopping list items so we can get ID of one
   //  to delete.
   //  2. DELETE an item and ensure we get back a status 204
-  it('should delete items on DELETE', function() {
+  it('SHOPPING: should delete items on DELETE', function() {
     return chai.request(app)
       // first have to get so we have an `id` of item
       // to delete
