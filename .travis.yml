@@ -1,2 +1,9 @@
 language: node_js
 node_js: node
+deploy:
+  provider: heroku
+  api_key:
+    secure: G5lhKQzw8PcYqLLfRld6LUV4gAMK4oXm+0uFg4TWelpmfMMq5sxG+Ekyual7b1cQbXB/D2PGsdWJWbT4UKFmw/qP5dKMy/ZVcVLOI58a2NwY4F1Zdl3YIwBVTA4RqeGPdonnsFP2wUqTGXgJYGfdYQJrJwatzZ0pZ07Do+zrUmKVtKlFJ+VqrSNQpCCjnmwyJ2LPquoz5FAiTMrCaHPiigxalet6apARt8Ey5uo5CVSj8uIIBi51kAWokN8sJ+k6EN3vlqltXJxPKPWrnl0moNYxfRix5gLs881c8pVAf/Q1crwxH3PKJoRDN487kqs7av4g6YrsRku2rPhvtKRfnDfyptN4zIfmiPikpHMrJRhzHMqhxSB7EAMwaHUPmZcxjJEzk1IdClJwcBs6M9TivMpKptN5iP2VXULCBm2sEtR3/gKHLZ++uAIAs7oN9O196r7+lSCdkLrv9oKxQwPjdeRXjD5CApCMxQcOXZEQDfde5nX+rhI1CIEWbust+fH+gnL/gT1aLIlZpOtg4OxS70EM3deyazZvupjTnELsEqv8/zm5XmVW89NvPKZSmsrQXMmsze9ly7w3sR36BsGV6Mk/cszeWaqT8GgpKRxaxAJJab0rzauwaILEJW+b/I08REq7f60rdah9R1gY5H44saSAYdJSYgVwrj6b9Z/cD/s=
+  app: classique-croissant-67550
+  on:
+    repo: mikebcbc/node-shopping-list-integration-tests
